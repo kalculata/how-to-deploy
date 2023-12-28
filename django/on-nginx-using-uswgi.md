@@ -89,7 +89,7 @@ uwsgi_param  SERVER_NAME        $server_name;
 chdir            = /path/to/your/django/project/
 
 # Django's wsgi file
-module           = uzaverse_manager.wsgi
+module           = django_project_name.wsgi
 
 # full path to Python virtual env
 home             = /path/to/your/django/project/env
