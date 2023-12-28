@@ -180,7 +180,7 @@ mkdir vassals
 sudo ln -s /path/to/your/django/project/uwsgi.ini /path/to/your/django/project/env/vassals/
 ```
 
-16. Create a systemd service file at /etc/systemd/system/yourdomain.uwsgi.service with the following content:
+16. Create a systemd service file at `/etc/systemd/system/yourdomain.uwsgi.service` with the following content:
 
 ```sh
 [Unit]
