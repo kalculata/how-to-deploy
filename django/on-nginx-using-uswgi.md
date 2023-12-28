@@ -20,7 +20,7 @@ Follow these steps to prepare your Django project for deployment, setting up the
 
 1. Create a virtual environment using `python -m venv env` or  `python3 -m venv env`
 2. Activate the environment: `source env/bin/activate`
-3. Install requirements: `pip install -r requiments.txt`
+3. Install requirements: `pip install -r requirements.txt`
 4. In your Django project's settings (`settings.py`), add your domain(s) to the `ALLOWED_HOSTS` list:
 
 ```python
