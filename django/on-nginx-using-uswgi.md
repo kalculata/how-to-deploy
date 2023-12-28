@@ -1,4 +1,4 @@
-# Django Project Deployment Guide with uWSGI and Nginx
+# How to deploy Django project on Nginx using uWSGI ?
 
 Welcome to the deployment guide for deploying your Django project using uWSGI and Nginx. This comprehensive guide has been inspired by the informative article from [Tony Teaches Tech](https://tonyteaches.tech/django-nginx-uwsgi-tutorial/). We aim to provide you with step-by-step instructions to ensure a smooth and efficient deployment process, enabling your Django web application to handle production-level traffic with ease.
 
