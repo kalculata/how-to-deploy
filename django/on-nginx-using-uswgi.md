@@ -198,15 +198,15 @@ Replace `<your user>` with your actual username.
 17. Enable the service to execute on system boot and start it:
 
 ```sh
-systemctl enable yourdomain.uwsgi.service
-systemctl start yourdomain.uwsgi.service
+sudo systemctl enable yourdomain.uwsgi.service
+sudo systemctl start yourdomain.uwsgi.service
 ```
 
 18. Check the status of the service and stop it if needed:
 
 ```sh
-systemctl status yourdomain.uwsgi.service
-systemctl stop yourdomain.uwsgi.service
+sudo systemctl status yourdomain.uwsgi.service
+sudo systemctl stop yourdomain.uwsgi.service
 ```
 
 With these configurations, Nginx, uWSGI, and Django are connected and set up to work together seamlessly. Your Django project is now deployed and ready to handle production-level traffic.
