@@ -20,14 +20,14 @@ Before you start deploying your React app on Nginx using PM2, ensure you have th
 yarn build # or npm run build
 ```
 
-2. Add serve to your project
+2. Install serve 
 
 ```sh
 # With npm
-npm install serve
+npm install -g serve
 
 # Or with Yarn
-yarn add serve
+yarn global add serve
 ```
 
 3. Update the scripts section in your package.json file to include a command for starting the server.
