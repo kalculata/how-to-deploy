@@ -100,6 +100,8 @@ server {
       proxy_set_header Host $host;
       proxy_cache_bypass $http_upgrade;
   }
+
+  access_log off;
 }
 ```
 Replace `your.domain` with your actual domain and update the paths accordingly. If you have multiple domains, separate them with space.
