@@ -12,11 +12,38 @@ Before you start deploying your React app on Nginx using PM2, ensure you have th
 - Basic knowledge of Linux server administration.
 - Access to a domain or subdomain for hosting your React application.
 
+## Setting up project
+
+1.  Build the production-ready version
+
+```sh
+yarn build # or npm run build
+```
+
+2. Add serve to your project
+
+```sh
+# With npm
+npm install serve
+
+# Or with Yarn
+yarn add serve
+```
+
+3. Update the scripts section in your package.json file to include a command for starting the server.
+
+```js
+"scripts": {
+  // Other scripts
+  "serve": "serve -s build"
+}
+```
+
 ## Setting up PM2
 
 PM2 is a process manager for Node.js applications. 
 
-1. Install PM2 globally using npm or Yarn.
+4. Install PM2 globally using npm or Yarn.
 
 ```sh
 # With npm
@@ -26,15 +53,15 @@ npm install -g pm2
 yarn global add pm2
 ```
 
-2. Create a `ecosystem.config.js` file in the root directory of your project for PM2 configuration with the following content:
+5. Create a `ecosystem.config.js` file in the root directory of your project for PM2 configuration with the following content:
 
 ```js
 module.exports = {
   apps: [
     {
       name: '<project_name>',
-      script: 'yarn',
-      args: 'start',
+      script: 'yarn', // or npm
+      args: 'serve', // or run serve
       instances: <instances>,
       watch: true,
       max_memory_restart: '<limit>M',
@@ -48,3 +75,57 @@ module.exports = {
 ```
 
 Make sure to replace the placeholders <project_name>, <instances>, <limit>, and <port> with the appropriate values for your deployment.
+
+## Configuring Nginx
+
+6. Create a new Nginx configuration file
+
+```sh
+sudo nano /etc/nginx/sites-available/project_name.conf
+```
+
+7. Use the following template
+
+```sh
+server {
+  listen      80;
+  server_name your.domain;
+  charset     utf-8;
+
+  location / {
+      proxy_pass http://localhost:<port>;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+  }
+}
+```
+Replace `your.domain` with your actual domain and update the paths accordingly. If you have multiple domains, separate them with space.
+
+8. Create a symbolic link to enable the Nginx configuration file:
+
+```sh
+sudo ln -s /etc/nginx/sites-available/project_name.conf /etc/nginx/sites-enabled/
+```
+
+9. Restart Nginx to apply the changes:
+
+```sh
+sudo systemctl restart nginx
+```
+
+## Finial steps Nginx
+
+- To start the production version of your app using PM2
+
+```sh
+pm2 start ecosystem.config.js
+```
+
+- Confirm that your app is running and monitored by PM2. You can check the status using:
+
+  ```sh
+  pm2 status
+  ```
