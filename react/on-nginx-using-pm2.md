@@ -69,6 +69,9 @@ module.exports = {
         PORT: <port>,
         NODE_ENV: 'production',
       },
+      output: 'path/logs/out.log',   // Path to standard output log file
+      error: 'path/logs/error.log',  // Path to error output log file
+      log_date_format: 'DD-MM-YYYY HH:mm:ss',
     },
   ],
 };
