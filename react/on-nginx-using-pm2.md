@@ -112,9 +112,10 @@ Replace `your.domain` with your actual domain and update the paths accordingly. 
 sudo ln -s /etc/nginx/sites-available/project_name.conf /etc/nginx/sites-enabled/
 ```
 
-9. Restart Nginx to apply the changes:
+9. Test the Nginx configuration and restart Nginx to apply the changes:
 
 ```sh
+sudo nginx -t
 sudo systemctl restart nginx
 ```
 
