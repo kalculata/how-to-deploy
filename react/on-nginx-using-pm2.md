@@ -24,26 +24,17 @@ yarn build # or npm run build
 
 ```sh
 # With npm
-npm install -g serve
+npm install serve
 
 # Or with Yarn
-yarn global add serve
-```
-
-3. Update the scripts section in your package.json file to include a command for starting the server.
-
-```js
-"scripts": {
-  // Other scripts
-  "serve": "serve -s build"
-}
+yarn add serve
 ```
 
 ## Setting up PM2
 
 PM2 is a process manager for Node.js applications. 
 
-4. Install PM2 globally using npm or Yarn.
+3. Install PM2 globally using npm or Yarn.
 
 ```sh
 # With npm
@@ -60,7 +51,7 @@ module.exports = {
   apps: [
     {
       name: '<project_name>',
-      script: 'yarn',
+      script: 'npx',
       args: 'serve -p <port>',
       instances: <instances>,
       watch: true,
