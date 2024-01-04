@@ -60,13 +60,12 @@ module.exports = {
   apps: [
     {
       name: '<project_name>',
-      script: 'yarn', // or npm
-      args: 'serve', // or run serve
+      script: 'yarn',
+      args: 'serve -p <port>',
       instances: <instances>,
       watch: true,
       max_memory_restart: '<limit>M',
       env: {
-        PORT: <port>,
         NODE_ENV: 'production',
       },
       output: 'path/logs/out.log',   // Path to standard output log file
