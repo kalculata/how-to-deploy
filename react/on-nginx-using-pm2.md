@@ -44,7 +44,7 @@ npm install -g pm2
 yarn global add pm2
 ```
 
-5. Create a `ecosystem.config.js` file in the root directory of your project for PM2 configuration with the following content:
+4. Create a `ecosystem.config.js` file in the root directory of your project for PM2 configuration with the following content:
 
 ```js
 module.exports = {
@@ -71,13 +71,13 @@ Make sure to replace the placeholders <project_name>, <instances>, <limit>, and 
 
 ## Configuring Nginx
 
-6. Create a new Nginx configuration file
+5. Create a new Nginx configuration file
 
 ```sh
 sudo nano /etc/nginx/sites-available/project_name.conf
 ```
 
-7. Use the following template
+6. Use the following template
 
 ```sh
 server {
@@ -99,13 +99,13 @@ server {
 ```
 Replace `your.domain` with your actual domain and update the paths accordingly. If you have multiple domains, separate them with space.
 
-8. Create a symbolic link to enable the Nginx configuration file:
+7. Create a symbolic link to enable the Nginx configuration file:
 
 ```sh
 sudo ln -s /etc/nginx/sites-available/project_name.conf /etc/nginx/sites-enabled/
 ```
 
-9. Test the Nginx configuration and restart Nginx to apply the changes:
+8. Test the Nginx configuration and restart Nginx to apply the changes:
 
 ```sh
 sudo nginx -t
@@ -114,13 +114,13 @@ sudo systemctl restart nginx
 
 ## Finial steps Nginx
 
-- To start the production version of your app using PM2
+9. To start the production version of your app using PM2
 
 ```sh
 pm2 start ecosystem.config.js
 ```
 
-- Confirm that your app is running and monitored by PM2. You can check the status using:
+10. Confirm that your app is running and monitored by PM2. You can check the status using:
 
   ```sh
   pm2 status
