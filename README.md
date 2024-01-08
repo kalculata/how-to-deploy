@@ -6,9 +6,11 @@ Deploying a project can be a complex task, especially when dealing with specific
 
 ## Technologies Covered
 - Django:
-    - [How to deploy Django project on Nginx using uWSGI ?](https://github.com/kalculata/how-to-deploy/blob/main/django/on-nginx-using-uswgi.md)
+    - [How to deploy Django project on nginx using uWSGI ?](https://github.com/kalculata/how-to-deploy/blob/main/django/on-nginx-using-uswgi.md)
 - React:
-    - [How to deploy React app on Nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/react/on-nginx-using-pm2.md)
+    - [How to deploy React app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/react/on-nginx-using-pm2.md)
+- Node.js:
+    - [How to deploy Node.js app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/node/on-nginx-using-pm2.md)
 
 License
 This repository is licensed under the [MIT License](). Feel free to use, modify, and distribute the content, but ensure to include the appropriate attribution.
