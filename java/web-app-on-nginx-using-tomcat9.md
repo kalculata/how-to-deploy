@@ -65,8 +65,7 @@ server {
 }
 
 ```
-
-Replace your.domain with your actual domain and update <port> accordingly.
+Remember to replace your.domain with your actual domain and `<port>` with the port number where Tomcat is running.
 
 6. Create a symbolic link to enable the Nginx configuration file:
 
