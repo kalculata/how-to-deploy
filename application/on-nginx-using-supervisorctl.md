@@ -1,4 +1,4 @@
-# How to Deploy Application on Nginx Using Supervisorctl
+# How to Deploy Application on Nginx Using Supervisorctl ?
 
 This guide provides step-by-step instructions to deploy an application on Nginx using Supervisorctl, ensuring reliable process management and efficient handling of production-level traffic. While this example uses a Java JAR application, the process remains the same for applications built with different technologies.
 

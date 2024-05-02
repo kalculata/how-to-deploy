@@ -11,6 +11,8 @@ Deploying a project can be a complex task, especially when dealing with specific
     - [How to deploy React app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/react/on-nginx-using-pm2.md)
 - Node.js:
     - [How to deploy Node.js app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/node/on-nginx-using-pm2.md)
+- Application:
+    - [# How to Deploy Application on Nginx Using Supervisorctl ?](https://github.com/kalculata/how-to-deploy/blob/main/application/on-nginx-using-supervisorctl.md)
 
 License
 This repository is licensed under the [MIT License](). Feel free to use, modify, and distribute the content, but ensure to include the appropriate attribution.
