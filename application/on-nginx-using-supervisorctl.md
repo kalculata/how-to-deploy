@@ -82,7 +82,6 @@ sudo ln -s /etc/nginx/sites-available/myapp.conf /etc/nginx/sites-enabled/
 8. Test the Nginx configuration and restart Nginx to apply the changes:
 
 ```sh
-Copy code
 sudo nginx -t
 sudo systemctl restart nginx
 ```
