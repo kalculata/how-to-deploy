@@ -18,7 +18,7 @@ Before deploying your Java web application on Nginx using Tomcat9, ensure you ha
 
 2. Ensure your application is configured to run on Tomcat9.
 
-## Configuring Tomcat9
+## Deploy
 
 Tomcat9 is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies.
 
