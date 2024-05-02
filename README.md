@@ -11,6 +11,8 @@ Deploying a project can be a complex task, especially when dealing with specific
     - [How to deploy React app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/react/on-nginx-using-pm2.md)
 - Node.js:
     - [How to deploy Node.js app on nginx using pm2 ?](https://github.com/kalculata/how-to-deploy/blob/main/node/on-nginx-using-pm2.md)
+- Java:
+    - [# How to Deploy Java Web App on Nginx Using Tomcat9 ?](https://github.com/kalculata/how-to-deploy/blob/main/java/web-app-on-nginx-using-tomcat9.md)
 - Application:
     - [# How to Deploy Application on Nginx Using Supervisorctl ?](https://github.com/kalculata/how-to-deploy/blob/main/application/on-nginx-using-supervisorctl.md)
 
