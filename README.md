@@ -15,6 +15,10 @@ Deploying a project can be a complex task, especially when dealing with specific
     - [# How to Deploy Java Web App on Nginx Using Tomcat9 ?](https://github.com/kalculata/how-to-deploy/blob/main/java/web-app-on-nginx-using-tomcat9.md)
 - Application:
     - [# How to Deploy Application on Nginx Using Supervisorctl ?](https://github.com/kalculata/how-to-deploy/blob/main/application/on-nginx-using-supervisorctl.md)
+- Mobile App:
+    - [# How to Deploy Mobile Application on PlayStore ?](https://github.com/kalculata/how-to-deploy/blob/main/mobile-app/on-playstore.md)
+- Bonus:
+    - [# How to install install a Free SSL Certificate for Web Application on Nginx ?](https://github.com/kalculata/how-to-deploy/blob/main/mobile-app/on-playstore.md)
 
 License
 This repository is licensed under the [MIT License](). Feel free to use, modify, and distribute the content, but ensure to include the appropriate attribution.

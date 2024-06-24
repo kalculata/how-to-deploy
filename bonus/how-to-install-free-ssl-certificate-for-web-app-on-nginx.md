@@ -1,4 +1,4 @@
-# How to install install a Free SSL Certificate for Web Application on Nginx
+# How to install a Free SSL Certificate for Web Application on Nginx
 
 This guide walks you through the process of securing your web application deployed on Nginx with a free SSL certificate, ensuring encrypted communication between clients and your server.
 
