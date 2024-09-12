@@ -9,6 +9,20 @@ Before proceeding with the deployment process, ensure you have the following:
 - Android Application: Have a completed Android application ready for deployment.
 - Java Development Kit (JDK): Ensure JDK is installed on your development machine.
 - Android Studio: Have Android Studio installed for building and signing your application.
+- Target API Level 34: As of `August 31, 2023`, Google Play requires that all new apps must target at least API level 34 (Android 14) to ensure compatibility with the latest Android features and security updates. To configure your Android project to target API level 34, open the `build.gradle` file located in the `android/app` directory. In the android section, update the `targetSdkVersion` to 34.
+
+```groovy
+android {
+  ...
+  defaultConfig {
+    minSdkVersion 21    // Set according to your app's minimum requirement
+    targetSdkVersion 34 // Update this to 34
+    ...
+  }
+}
+```
+
+If you are using React Native, after making this change, open Android Studio and sync your project by clicking "Sync Now" at the top-right corner to apply the update. However, if you are using Flutter, there is no need to manually sync the project. The necessary elements will be downloaded automatically when you run the app or generate the APK/bundle.
 
 ## Step 1: Generate Key and Create `key.properties` File
 
